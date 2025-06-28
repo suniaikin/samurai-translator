@@ -20,31 +20,31 @@ const correctAnswersMinimumPercent = 50
 const userAnswer0 = prompt(word0) // 0
 if (userAnswer0 === word0translation) {
     correctAnswerCount++;
-	alert ("Верно!")
+	document.write ("Верно!")
 } else {
-	alert("Бестолочь!");
+	document.write("Бестолочь!");
 }
 
 const userAnswer1 = prompt(word1) // 0
 if (userAnswer1 === word1translation) {
     correctAnswerCount++;
-	alert ("Верно!")
+	document.write ("Верно!")
 } else {
-	alert("Бестолочь!");
+	document.write("Бестолочь!");
 }
 
 const userAnswer2 = prompt(word2) // 0
 if (userAnswer2 === word2translation) {
     correctAnswerCount++;
-	alert ("Верно!")
+	document.write ("Верно!")
 } else {
-	alert("Бестолочь!");
+	document.write("Бестолочь!");
 }
 
 const userCorrectAnswerPercent = 100
 
 if (correctAnswerCount/wordsCount*userCorrectAnswerPercent > correctAnswersMinimumPercent) {
-	alert(finishSuccessMessage)
+	document.write("<br>", finishSuccessMessage)
 }  else {
-	alert(finishUnsuccessMessage)
+	document.write("<br>", finishUnsuccessMessage)
 }
